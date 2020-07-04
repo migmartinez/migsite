@@ -1,0 +1,28 @@
+h1, h2 {
+    color: #ffbd69;
+    text-align: center;
+}
+
+.text { 
+    /* position: relative !important;
+    top: 25vh !important; */
+}
+
+p {
+    color: #ffbd69;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.homepage {
+    /* height: 100%;
+    width: 100%;
+    position: relative;
+    display: block; */
+    background-color: #202040;
+    margin: 0;
+    height: 100%;
+}
+

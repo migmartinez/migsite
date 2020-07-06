@@ -1178,7 +1178,8 @@
 
 .credits-info p, .credits-me p {
   margin: 0 0 15px 0;
-  max-width: 340px;
+  /* max-width: 340px; */
+  width: 100%;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.4em;
@@ -1217,6 +1218,7 @@ html {
     padding: 0;
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -1259,3 +1261,12 @@ app-root {
 /* :host {
     border: 4px solid #543864;
 } */
+
+@media only screen and (max-width: 565px) {
+    .credits-info, .credits-me {
+        display: block;
+        position: relative;
+        top: 80vh;
+        text-align: center;
+    }
+}

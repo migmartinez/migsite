@@ -1183,7 +1183,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 1.4em;
-  color: #fff;
+  /* color: #fff; */
 }
 .credits-info span, .credits-me span {
   margin: 0 5px;
@@ -1204,7 +1204,7 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #4492f4;
+  /* background: #4492f4; */
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -1229,7 +1229,7 @@ body {
     /* top: 0; */
     position: absolute;
     display: block;
-    background-color: #202040;
+    /* background-color: #202040; */
 
 }
 
@@ -1247,7 +1247,7 @@ app-sidepanel {
 }
 
 app-root {
-    width: 89%;
+    width: 100%;
     height: 100%;
     top: 0;
     display: inline-flex !important;
@@ -1263,7 +1263,7 @@ app-root {
 } */
 
 @media only screen and (max-width: 565px) {
-    .credits-info, .credits-me {
+   /*  .credits-info, .credits-me {
         display: block;
         position: relative;
         top: 60%;
@@ -1275,7 +1275,7 @@ app-root {
     }
     .loadingtext h1 {
         top: 35%;
-    }
+    } */
 
   /*   .loadingtext2 h1 {
         top: 15%;

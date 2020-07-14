@@ -144,21 +144,22 @@ export class HomeComponent implements OnInit{
     let now = new Date().toLocaleTimeString();
     let now2 = now.split(":")[1];
     if ( parseInt(now2) < 15) {
+     this.show = false;
      return "hand";
     }
     else if (parseInt(now2) > 15 && parseInt(now2) < 30 ) {
       this.show = true;
-      window.location.reload();
+      /* window.location.reload(); */
   }
     else if (parseInt(now2) > 30 && parseInt(now2) < 45 ) {
-      /* return "hand"; */
-      this.show = true;
-      window.location.reload();
+      this.show = false;
+      return "hand";
+      /* window.location.reload(); */
     }
     else {
       //this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor =  '';
       this.show = true;
-      window.location.reload();
+      /* window.location.reload(); */
       /* return "hand"; */
     }
   

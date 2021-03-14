@@ -1,17 +1,15 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { Router } from '@angular/router';
 import anime from 'animejs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-coming-soon',
+  templateUrl: './coming-soon.component.html',
+  styleUrls: ['./coming-soon.component.css']
 })
-export class HomeComponent implements OnInit{
+export class ComingSoonComponent implements OnInit{
   title = 'migsite';
   show: boolean = false;
-  done: boolean = false;
-  constructor(private elementRef: ElementRef, private router: Router) {
+  constructor(private elementRef: ElementRef) {
   }
 
   ngOnInit() {
@@ -140,16 +138,6 @@ export class HomeComponent implements OnInit{
         offset: 2000 + 10 * paths.length
       });
       
-  }
-
-  goToNew() {
-    this.done = true;
-    this.router.navigate(['/homepage']);
-  }
-
-  goToBack() {
-    this.done = false;
-    this.router.navigate(['/']);
   }
 
   who() {
